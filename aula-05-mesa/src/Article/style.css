@@ -1,0 +1,35 @@
+.bannerButton { 
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(253, 247, 247);  
+    padding: 10px 80px;  
+    border-radius: 15px; 
+    border-radius: 20px;
+    background-color: #0af;
+    animation: grow 4s infinite;
+
+}
+
+.bannerButton:hover {
+    cursor: url(../img/FFXII_LB_Cursor.png), default !important;
+    color: rgb(253, 247, 247);
+    background-color: #042133;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1)
+    }
+
+    25% {
+        transform: scale(1.2)
+    }
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+    
+}

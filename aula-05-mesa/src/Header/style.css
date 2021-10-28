@@ -1,0 +1,35 @@
+img {
+    width: 200px;
+    margin: 10px;   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;   
+    color: rgb(253, 247, 247);
+}
+
+
+header nav ul:last-child {
+    margin-right: 10px;  
+}
+
+header nav ul li {
+    font-size: 20px;
+    list-style-type: none;
+    border-bottom: 3px solid transparent ;
+    padding: 0 5px;
+    margin-bottom: 3px;          
+}
+
+header nav ul li:hover {
+    border-bottom: 2px solid #0CF8EC;
+    transition: border .5s ease-in-out ;
+    cursor: url(../img/FFXII_LB_Cursor.png), default !important;        
+}
