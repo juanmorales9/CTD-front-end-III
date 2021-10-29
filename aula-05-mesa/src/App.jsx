@@ -1,5 +1,5 @@
 import './App.css';
-import logo from '/home/edu/3º Bimestre - CTD/Front End III/aula-05-mesa/src/img/fflogo.png';
+import logo from './img/fflogo.png';
 
 
 import Header from './Header';
