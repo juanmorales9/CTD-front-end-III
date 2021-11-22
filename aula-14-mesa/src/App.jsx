@@ -34,7 +34,7 @@ export default class App extends Component {
               <Field
                 placeholder='Insira o CEP'
                 required
-                type='number'
+                type='text'
                 name='cep'
                 id='cep'
                 className='form-control my-3'
@@ -44,21 +44,15 @@ export default class App extends Component {
               </button>
             </Form>
           </Formik>
-          {this.state && (
-            <>
-              <h1>Cidade</h1>
-              <h2 className='my-3' style={{ color: 'blue' }}>
-                {this.state.city}
-              </h2>
-              <h2>Estado</h2>
-              <h3 className='my-3' style={{ color: 'blue' }}>
-                {this.state.state}
-              </h3>
-              <h2>CEP</h2>
-              <h3 className='my-3' style={{ color: 'blue' }}>
-                {this.state.cep}
-              </h3>
-            </>
+          {this.state.cep && (
+            <ul className='list-group my-3' style={{ listStyle: 'none' }}>
+              <h4>Cidade</h4>
+              <li>{this.state.city}</li>
+              <h4>Estado</h4>
+              <li>{this.state.state}</li>
+              <h4>CEP</h4>
+              <li>{this.state.cep}</li>
+            </ul>
           )}
         </div>
       </>
